@@ -3,14 +3,16 @@
     "description": "This extension is made for Asciidoc Book",
     "version": "1.0",
     "manifest_version": 3,
-    "permissions": [
-       "activeTab",
-       "scripting"
-    ],
-    "background": {
-       "service_worker": "background.js"
+    "content_security_policy": {
+        "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
     },
+    "permissions": [
+        "sidePanel"
+    ],
     "action": {
-       "default_popup": "popup.html"
+        "default_title": "Click to open panel"
+    },
+    "side_panel": {
+        "default_path": "sidepanel.html"
     }
  }

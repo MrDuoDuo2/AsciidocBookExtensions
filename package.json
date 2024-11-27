@@ -17,5 +17,9 @@
     "typescript": "^5.7.2",
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "browserify": "^17.0.1",
+    "gee_tagger": "file:pkg"
   }
 }
